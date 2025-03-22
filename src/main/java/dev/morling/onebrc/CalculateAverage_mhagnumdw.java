@@ -27,6 +27,8 @@ import java.util.stream.Collector;
 public class CalculateAverage_mhagnumdw {
 
     private static final String FILE = "./measurements.txt";
+    // private static final String FILE = "./src/test/resources/samples/measurements-1.txt";
+    // private static final String FILE = "./src/test/resources/samples/measurements-rounding.txt";
 
     private static record Measurement(String station, double value) {
         private Measurement(String[] parts) {

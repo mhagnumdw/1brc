@@ -16,4 +16,6 @@
 #
 
 JAVA_OPTS=""
-java $JAVA_OPTS --class-path target/average-1.0.0-SNAPSHOT.jar dev.morling.onebrc.CalculateAverage_mhagnumdw
+# java $JAVA_OPTS --class-path target/average-1.0.0-SNAPSHOT.jar dev.morling.onebrc.CalculateAverage_mhagnumdw
+# // TODO: desfazer mudança, apenas para eu conseguir executar os testes sem precisar empacotar o projeto
+java src/main/java/dev/morling/onebrc/CalculateAverage_mhagnumdw.java
