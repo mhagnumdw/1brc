@@ -279,7 +279,8 @@ public class CalculateAverage_anitasv {
     }
 
     private static String statToString(IntSummaryStatistics stat) {
-        return STR."\{stat.getMin() / 10.0}/\{Math.round(stat.getAverage()) / 10.0}/\{stat.getMax() / 10.0}";
+        // return STR."\{stat.getMin() / 10.0}/\{Math.round(stat.getAverage()) / 10.0}/\{stat.getMax() / 10.0}";
+        return "comentado";
     }
 
     public static void main(String[] args) throws IOException {

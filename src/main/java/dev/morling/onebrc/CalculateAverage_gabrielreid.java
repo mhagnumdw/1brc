@@ -125,11 +125,11 @@ public class CalculateAverage_gabrielreid {
                 return new State(state.map, new byte[0]);
             });
 
-            var state = stateFuture.join();
-            System.out.println(STR."{\{state.map.entrySet().stream().sorted(Map.Entry.comparingByKey())
-                    .map(e -> String.format(Locale.US, "%s=%.1f/%.1f/%.1f", e.getKey(), e.getValue().min / 10f,
-                            (e.getValue().sum / (float) e.getValue().count) / 10f, e.getValue().max / 10f))
-                    .collect(Collectors.joining(", "))}}");
+//            var state = stateFuture.join();
+//            System.out.println(STR."{\{state.map.entrySet().stream().sorted(Map.Entry.comparingByKey())
+//                    .map(e -> String.format(Locale.US, "%s=%.1f/%.1f/%.1f", e.getKey(), e.getValue().min / 10f,
+//                            (e.getValue().sum / (float) e.getValue().count) / 10f, e.getValue().max / 10f))
+//                    .collect(Collectors.joining(", "))}}");
 
     }}
 

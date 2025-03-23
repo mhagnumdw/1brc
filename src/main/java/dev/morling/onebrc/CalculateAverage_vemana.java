@@ -345,14 +345,15 @@ public class CalculateAverage_vemana {
 
     @Override
     public String toString() {
-      return STR."""
-        ByteRange {
-          bufferStart = \{bufferStart}
-          bufferEnd = \{bufferEnd}
-          startInBuf = \{startInBuf}
-          endInBuf = \{endInBuf}
-        }
-        """;
+//      return STR."""
+//        ByteRange {
+//          bufferStart = \{bufferStart}
+//          bufferEnd = \{bufferEnd}
+//          startInBuf = \{startInBuf}
+//          endInBuf = \{endInBuf}
+//        }
+//        """;
+        return "comentado";
     }
 
         private void close(MappedByteBuffer buffer) {
@@ -1055,7 +1056,7 @@ public class CalculateAverage_vemana {
         }
 
     private static void printEvent(String message, long nanoTime) {
-      errPrint(STR."\{message} = \{(nanoTime - startTime) / 1_000_000}ms");
+      // errPrint(STR."\{message} = \{(nanoTime - startTime) / 1_000_000}ms");
     }
 
         public static class ThreadTimingsArray {
@@ -1103,22 +1104,23 @@ public class CalculateAverage_vemana {
           maxCompletion = Math.max(maxCompletion, timestamps[2 * i + 1] - startTime);
           minCompletion = Math.min(minCompletion, timestamps[2 * i + 1] - startTime);
         }
-        return STR."""
-        -------------------------------------------------------------------------------------------
-                                       \{id} Stats
-        -------------------------------------------------------------------------------------------
-        Max duration                              = \{maxDuration / 1_000_000} ms
-        Min duration                              = \{minDuration / 1_000_000} ms
-        Timespan[max(end)-min(start)]             = \{(maxCompletion - minBegin) / 1_000_000} ms [\{maxCompletion / 1_000_000} - \{minBegin / 1_000_000} ]
-        Completion Timespan[max(end)-min(end)]    = \{(maxCompletion - minCompletion) / 1_000_000} ms
-        Begin Timespan[max(begin)-min(begin)]     = \{(maxBegin - minBegin) / 1_000_000} ms
-        Average Duration                          = \{Arrays.stream(durationsMs)
-                                                            .average()
-                                                            .getAsDouble()} ms
-        Durations                                 = \{toString(durationsMs)} ms
-        Begin Timestamps                          = \{toString(beginMs)} ms
-        Completion Timestamps                     = \{toString(completionsMs)} ms
-        """;
+//        return STR."""
+//        -------------------------------------------------------------------------------------------
+//                                       \{id} Stats
+//        -------------------------------------------------------------------------------------------
+//        Max duration                              = \{maxDuration / 1_000_000} ms
+//        Min duration                              = \{minDuration / 1_000_000} ms
+//        Timespan[max(end)-min(start)]             = \{(maxCompletion - minBegin) / 1_000_000} ms [\{maxCompletion / 1_000_000} - \{minBegin / 1_000_000} ]
+//        Completion Timespan[max(end)-min(end)]    = \{(maxCompletion - minCompletion) / 1_000_000} ms
+//        Begin Timespan[max(begin)-min(begin)]     = \{(maxBegin - minBegin) / 1_000_000} ms
+//        Average Duration                          = \{Arrays.stream(durationsMs)
+//                                                            .average()
+//                                                            .getAsDouble()} ms
+//        Durations                                 = \{toString(durationsMs)} ms
+//        Begin Timestamps                          = \{toString(beginMs)} ms
+//        Completion Timestamps                     = \{toString(completionsMs)} ms
+//        """;
+        return "comentado";
       }
 
             public void recordEnd(int idx) {

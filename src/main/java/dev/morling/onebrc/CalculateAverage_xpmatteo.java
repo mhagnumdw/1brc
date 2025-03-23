@@ -238,7 +238,8 @@ public class CalculateAverage_xpmatteo {
 
         @Override
         public String toString() {
-            return STR."CityData{min=\{min}, sum=\{sum}, max=\{max}, count=\{count}\{'}'}";
+            // return STR."CityData{min=\{min}, sum=\{sum}, max=\{max}, count=\{count}\{'}'}";
+            return "comentado";
         }
     }
 

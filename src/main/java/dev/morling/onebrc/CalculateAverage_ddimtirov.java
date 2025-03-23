@@ -56,7 +56,7 @@ public class CalculateAverage_ddimtirov {
         var threads = fileSegments.stream().map(fileSegment -> Thread // manually start thread per segment
                 .ofPlatform()
                 .group(loaders)
-                .name(STR."Segment \{fileSegment}")
+                // .name(STR."Segment \{fileSegment}")
                 .start(() -> {
                     try (var fileChannel = (FileChannel) Files.newByteChannel(path, StandardOpenOption.READ)) {
                         var tracker = new Tracker();
@@ -88,7 +88,8 @@ public class CalculateAverage_ddimtirov {
     record FileSegment(int index, long start, long size) {
         @Override
         public String toString() {
-            return STR."#\{index} [\{start}..\{start + size}] \{size} bytes";
+            // return STR."#\{index} [\{start}..\{start + size}] \{size} bytes";
+            return "comentado";
         }
 
         public static List<FileSegment> forFile(Path file, int desiredSegmentsCount) throws IOException {
@@ -263,7 +264,7 @@ public class CalculateAverage_ddimtirov {
             if (assertions) {
                 var key = new String(nameBytesBuffer, 0, nameLength, StandardCharsets.UTF_8);
                 if (hashCollisionOccurrences.containsKey(key)) {
-                    hashCollisionOccurrences.computeIfAbsent(STR."\{key}[\{i}]", _ -> new LongAdder()).increment();
+                    // hashCollisionOccurrences.computeIfAbsent(STR."\{key}[\{i}]", _ -> new LongAdder()).increment();
                 }
             }
 

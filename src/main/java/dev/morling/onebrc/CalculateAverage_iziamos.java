@@ -84,7 +84,8 @@ public class CalculateAverage_iziamos {
 
     private record ResultRow(long min, double mean, long max) {
         public String toString() {
-            return STR."\{formatLong(min)}/\{round(mean)}/\{formatLong(max)}";
+            // return STR."\{formatLong(min)}/\{round(mean)}/\{formatLong(max)}";
+            return "comentado";
         }
 
         private double formatLong(final long value) {

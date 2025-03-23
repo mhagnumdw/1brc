@@ -34,7 +34,8 @@ public class CalculateAverage_tkosachev {
 
     private record ResultRow(int min, double mean, int max) {
         public String toString() {
-            return STR."\{round(min)}/\{round(mean)}/\{round(max)}";
+            // return STR."\{round(min)}/\{round(mean)}/\{round(max)}";
+            return "comentado";
         }
 
         private double round(double value) {

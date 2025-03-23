@@ -76,7 +76,8 @@ public class CalculateAverage_couragelee {
 
         @Override
         public String toString() {
-            return STR."\{min}/\{Math.round((sum / cnt) * 10.0) / 10.0}/\{max}";
+            // return STR."\{min}/\{Math.round((sum / cnt) * 10.0) / 10.0}/\{max}";
+            return "comentado";
         }
     }
 

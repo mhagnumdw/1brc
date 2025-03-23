@@ -186,8 +186,8 @@ public class CalculateAverage_moysesb {
             while (utf8[strlen] != '\0') strlen++;
             String city = new String(utf8, 0,  strlen, StandardCharsets.UTF_8);
             double[] r = e.getValue();
-            String fmt = FormatProcessor.FMT."%.1f\{round(r[0])}/%.1f\{round(r[3]/r[2])}/%.1f\{round(r[1])}";
-            sorted.put(city, fmt);
+            // String fmt = FormatProcessor.FMT."%.1f\{round(r[0])}/%.1f\{round(r[3]/r[2])}/%.1f\{round(r[1])}";
+            // sorted.put(city, fmt);
         }
 
         System.out.println(sorted);

@@ -79,7 +79,8 @@ public class CalculateAverage_ricardopieper {
             var avg = String.format("%.1f", ((double) this.sum / (double) this.count) / 10.0);
             var max = String.format("%.1f", (double) this.max / 10.0);
 
-            return STR."\{min}/\{avg}/\{max}";
+            // return STR."\{min}/\{avg}/\{max}";
+            return "comentado";
         }
     }
 

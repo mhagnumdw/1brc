@@ -56,12 +56,12 @@ public class CalculateAverage_vemanaNonIdiomatic {
 
   public static void main(String[] args) throws Exception {
     String className = MethodHandles.lookup().lookupClass().getSimpleName();
-    System.err.println(
-        STR."""
-        ------------------------------------------------
-        Running \{className}
-        -------------------------------------------------
-        """);
+//    System.err.println(
+//        STR."""
+//        ------------------------------------------------
+//        Running \{className}
+//        -------------------------------------------------
+//        """);
     Tracing.recordAppStart();
     Runtime.getRuntime()
         .addShutdownHook(
@@ -250,17 +250,18 @@ public class CalculateAverage_vemanaNonIdiomatic {
 
     @Override
     public String toString() {
-      return STR."""
-        ByteRange {
-          shard                 = \{shardIdx}
-          extentStart           = \{extentStart}
-          extentEnd             = \{extentEnd}
-          startInBuf            = \{startInBuf}
-          endInBuf              = \{endInBuf}
-          startAddress          = \{startAddress}
-          endAddress            = \{endAddress}
-        }
-        """;
+//      return STR."""
+//        ByteRange {
+//          shard                 = \{shardIdx}
+//          extentStart           = \{extentStart}
+//          extentEnd             = \{extentEnd}
+//          startInBuf            = \{startInBuf}
+//          endInBuf              = \{endInBuf}
+//          startAddress          = \{startAddress}
+//          endAddress            = \{endAddress}
+//        }
+//        """;
+        return "comentado";
     }
 
         private void bufferCleanSlate() {
@@ -498,12 +499,13 @@ public class CalculateAverage_vemanaNonIdiomatic {
         }
 
     public String toString() {
-      return STR."""
-        min = \{min()}
-        max = \{max()}
-        count = \{count()}
-        sum = \{sum()}
-        """;
+//      return STR."""
+//        min = \{min()}
+//        max = \{max()}
+//        count = \{count()}
+//        sum = \{sum()}
+//        """;
+        return "comentado";
     }
 
         public void update(short temperature) {
@@ -665,11 +667,11 @@ public class CalculateAverage_vemanaNonIdiomatic {
           map.put(entry.cityNameString(), entry.stat());
         }
       }
-      System.err.println(
-          STR."""
-        HashHits = \{hashHits}
-        HashMisses = \{hashMisses} (\{hashMisses * 100.0 / hashHits})
-        """);
+//      System.err.println(
+//          STR."""
+//        HashHits = \{hashHits}
+//        HashMisses = \{hashMisses} (\{hashMisses * 100.0 / hashHits})
+//        """);
       return new AggregateResult(map);
     }
 
@@ -1477,7 +1479,7 @@ public class CalculateAverage_vemanaNonIdiomatic {
         }
 
     private static void printEvent(String message, long nanoTime) {
-      errPrint(STR."\{message} = \{(nanoTime - startTime) / 1_000_000}ms");
+      // errPrint(STR."\{message} = \{(nanoTime - startTime) / 1_000_000}ms");
     }
 
         public static class ThreadTimingsArray {
@@ -1525,22 +1527,23 @@ public class CalculateAverage_vemanaNonIdiomatic {
           maxCompletion = Math.max(maxCompletion, timestamps[2 * i + 1] - startTime);
           minCompletion = Math.min(minCompletion, timestamps[2 * i + 1] - startTime);
         }
-        return STR."""
-        -------------------------------------------------------------------------------------------
-                                       \{id} Stats
-        -------------------------------------------------------------------------------------------
-        Max duration                              = \{maxDuration / 1_000_000} ms
-        Min duration                              = \{minDuration / 1_000_000} ms
-        Timespan[max(end)-min(start)]             = \{(maxCompletion - minBegin) / 1_000_000} ms [\{maxCompletion / 1_000_000} - \{minBegin / 1_000_000} ]
-        Completion Timespan[max(end)-min(end)]    = \{(maxCompletion - minCompletion) / 1_000_000} ms
-        Begin Timespan[max(begin)-min(begin)]     = \{(maxBegin - minBegin) / 1_000_000} ms
-        Average Duration                          = \{Arrays.stream(durationsMs)
-                                                            .average()
-                                                            .getAsDouble()} ms
-        Durations                                 = \{toString(durationsMs)} ms
-        Begin Timestamps                          = \{toString(beginMs)} ms
-        Completion Timestamps                     = \{toString(completionsMs)} ms
-        """;
+//        return STR."""
+//        -------------------------------------------------------------------------------------------
+//                                       \{id} Stats
+//        -------------------------------------------------------------------------------------------
+//        Max duration                              = \{maxDuration / 1_000_000} ms
+//        Min duration                              = \{minDuration / 1_000_000} ms
+//        Timespan[max(end)-min(start)]             = \{(maxCompletion - minBegin) / 1_000_000} ms [\{maxCompletion / 1_000_000} - \{minBegin / 1_000_000} ]
+//        Completion Timespan[max(end)-min(end)]    = \{(maxCompletion - minCompletion) / 1_000_000} ms
+//        Begin Timespan[max(begin)-min(begin)]     = \{(maxBegin - minBegin) / 1_000_000} ms
+//        Average Duration                          = \{Arrays.stream(durationsMs)
+//                                                            .average()
+//                                                            .getAsDouble()} ms
+//        Durations                                 = \{toString(durationsMs)} ms
+//        Begin Timestamps                          = \{toString(beginMs)} ms
+//        Completion Timestamps                     = \{toString(completionsMs)} ms
+//        """;
+        return "comentado";
       }
 
             public void recordEnd(int idx) {

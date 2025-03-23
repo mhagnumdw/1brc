@@ -93,7 +93,8 @@ public class CalculateAverage_unbounded {
 
         @Override
         public String toString() {
-            return STR."\{min/10.0}/\{Math.round(1.0 * totalTemp / count)/10.0}/\{max/10.0}";
+            // return STR."\{min/10.0}/\{Math.round(1.0 * totalTemp / count)/10.0}/\{max/10.0}";
+            return "comentado";
         }
     }
 
@@ -211,7 +212,7 @@ public class CalculateAverage_unbounded {
                 }
                 report.accept(decodeResult(hashTable, nameTable, stationIndexes, accumulators, minMax));
             } catch (IOException e) {
-                System.err.println(STR."I/O Exception: \{e}");
+                // System.err.println(STR."I/O Exception: \{e}");
                 throw new RuntimeException(e);
             }
         }
@@ -428,7 +429,8 @@ public class CalculateAverage_unbounded {
             stats.keySet().stream().sorted()
                     .map(key -> {
                         var s = stats.get(key);
-                        return STR."\{key}=\{s}";
+                        // return STR."\{key}=\{s}";
+                        return "comentado";
                     })
                     .collect(Collectors.joining(", "))
         );

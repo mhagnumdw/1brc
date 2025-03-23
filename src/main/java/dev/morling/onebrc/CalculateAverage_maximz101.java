@@ -39,7 +39,8 @@ public class CalculateAverage_maximz101 {
 
     private record ResultRow(double min, double mean, double max) {
         public String toString() {
-            return STR."\{round(min)}/\{round(mean)}/\{round(max)}";
+            // return STR."\{round(min)}/\{round(mean)}/\{round(max)}";
+            return "comentado";
         }
 
         private double round(double value) {

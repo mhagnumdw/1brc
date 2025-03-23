@@ -53,7 +53,8 @@ public class CalculateAverage_makohn {
 
         @Override
         public String toString() {
-            return STR."\{city}=\{round(min)}/\{round((1.0 * sum) / count)}/\{round(max)}";
+            // return STR."\{city}=\{round(min)}/\{round((1.0 * sum) / count)}/\{round(max)}";
+            return "comentado";
         }
 
         private double round(double value) {

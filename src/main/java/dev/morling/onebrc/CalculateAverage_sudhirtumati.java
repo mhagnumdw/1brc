@@ -49,7 +49,7 @@ public class CalculateAverage_sudhirtumati {
             for (int i = 0; i < THREAD_COUNT; i++) {
                 PERMITS.acquire();
                 Thread t = new ChunkProcessingThread(i, fc);
-                t.setName(STR."T\{i}");
+                // t.setName(STR."T\{i}");
                 t.start();
             }
             do {
@@ -293,7 +293,8 @@ public class CalculateAverage_sudhirtumati {
     private record ResultRow(double min, double sum, double count, double max) {
 
         public String toString() {
-            return STR."\{round(min)}/\{round((Math.round(sum * 10.0) / 10.0) / count)}/\{round(max)}";
+            // return STR."\{round(min)}/\{round((Math.round(sum * 10.0) / 10.0) / count)}/\{round(max)}";
+            return "comentado";
         }
 
         private double round(double value) {
